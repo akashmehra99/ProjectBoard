@@ -1,0 +1,10 @@
+@import '../styles.scss';
+
+.conatiner {
+    background: $conatiner-bg;
+    padding: $pm-20px;
+    .heading {
+        font-size: $font-lg;
+        font-weight: $font-weight-600;
+    }
+}
