@@ -13,9 +13,11 @@ class TaskStatusContainer extends React.Component {
         return (
             <div className="task-container">
                 <div className="status-heading">{this.props.status}</div>
-                <Task />
-                <Task />
-                <Task />
+                {this.props.tasks.map((task, index) => {
+                    return (
+                        <Task key={task.status + index} task={task} />
+                    );
+                })}
             </div>
         );
     }

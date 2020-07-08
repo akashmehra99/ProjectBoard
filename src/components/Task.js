@@ -8,30 +8,26 @@ class Task extends React.Component {
     }
 
     render() {
+        const border = 'task-cont ' + this.props.task.status + '_border';
         return (
-            <div className="task-cont on-track-border">
+            <div className={border}>
                 <div className="task-des">
-                    <div>CBSE: Grade:5 - Algebra</div>
+                    <div>{this.props.task.description}</div>
                      <div className="dots"></div>
                 </div>
                 <div className="status-people-cont">
                     <div className="people-cont">
-                        <div className="people">
-                            <div className="people-name">AK</div>
-                        </div>
-                        <div className="people">
-                            <div className="people-name">AK</div>
-                        </div>
-                        <div className="people">
-                            <div className="people-name">AK</div>
-                        </div>
-                        <div className="people">
-                            <div className="people-name">AK</div>
-                        </div>
+                        {this.props.task.people.map((person, index) => {
+                            return (
+                                <div className="people" key={this.props.task.id + index}>
+                                    <div className="people-name" id={this.props.task.id}>{person}</div>
+                                </div>
+                            )
+                        })}
                     </div>
                     <div className="date-perc-cont">
-                        <div className="completion-date">28-Nov-2020</div>
-                        <div className="completion-perc">75%</div>
+                        <div className="completion-date">{this.props.task.targetDate}</div>
+                        <div className="completion-perc">{this.props.task.completion}</div>
                     </div>
                 </div>
             </div>

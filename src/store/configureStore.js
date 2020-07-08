@@ -1,15 +1,15 @@
-// import { createStore, combineReducers } from 'redux';
-// import expensesReducer  from '../reducers/expenses';
-// import filtersReducer from '../reducers/filters';
+import { createStore, combineReducers } from 'redux';
+import tasksReducer  from '../reducers/tasks';
+import filtersReducer from '../reducers/filters';
 
-// // Store creation
+// Store creation
 
-// const store = createStore(
-//     combineReducers({
-//         expenses: expensesReducer,
-//         filters: filtersReducer
-//     }),
-//     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-// );
+const store = createStore(
+    combineReducers({
+        tasks: tasksReducer,
+        filters: filtersReducer
+    }),
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
-// export default store;
+export default store;

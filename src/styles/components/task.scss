@@ -4,14 +4,14 @@
     background: $white;
     margin-top: $pm-15px;
     padding-bottom: $pm-15px;
-    &.on-track-border {
+    &.on_track_border {
         border-top: 0.5rem solid green;
     }
-    &.delayed {
+    &.delayed_border {
         border-top: 0.5rem solid yellow;
 
     }
-    &.on-hold {
+    &.on_hold_border {
         border-top: 0.5rem solid red;
     }
     .task-des {
@@ -62,6 +62,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-column-gap: $pm-20px;
+                margin-top: $square-cont;
             }
 
             .completion-date {
