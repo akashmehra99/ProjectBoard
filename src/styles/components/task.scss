@@ -40,6 +40,13 @@
                 height: $square-cont;
                 width: $square-cont;
                 margin-left: $pm-10px;
+                color: $white;
+                text-align: center;
+                border-radius: $pm-30px;
+                .people-name {
+                    position: relative;
+                    top: $pm-18px;
+                }
             }
         }
         .date-perc-cont {

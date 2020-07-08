@@ -16,10 +16,18 @@ class Task extends React.Component {
                 </div>
                 <div className="status-people-cont">
                     <div className="people-cont">
-                        <div className="people"></div>
-                        <div className="people"></div>
-                        <div className="people"></div>
-                        <div className="people"></div>
+                        <div className="people">
+                            <div className="people-name">AK</div>
+                        </div>
+                        <div className="people">
+                            <div className="people-name">AK</div>
+                        </div>
+                        <div className="people">
+                            <div className="people-name">AK</div>
+                        </div>
+                        <div className="people">
+                            <div className="people-name">AK</div>
+                        </div>
                     </div>
                     <div className="date-perc-cont">
                         <div className="completion-date">28-Nov-2020</div>
