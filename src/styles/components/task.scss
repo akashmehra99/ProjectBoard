@@ -30,6 +30,7 @@
     .status-people-cont {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-column-gap: $pm-10px;
         .people-cont {
             display: grid;
             grid-template-columns: $pm-60px $pm-60px $pm-60px;
@@ -51,11 +52,17 @@
         }
         .date-perc-cont {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             grid-column-gap: $pm-15px;
             align-items: center;
             text-align: center;
             font-size: $font-sm;
+
+            @media screen and (min-width: $screen-lg) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: $pm-20px;
+            }
 
             .completion-date {
                 background: $conatiner-bg;
