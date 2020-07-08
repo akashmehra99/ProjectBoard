@@ -2,13 +2,14 @@
 
 $blue: #3B5999;
 $white: #FFFFFF;
-$conatiner-bg: #C1C5C8;
+$conatiner-bg:#E6E6E6;
+$people-bg: #BCC0C3;
 
 
 // Font Size
 
-$font-xs: 1.2rem;
-$font-sm: 1.4rem;
+$font-xs: 1.1rem;
+$font-sm: 1.3rem;
 $font-md: 1.6rem;
 $font-lg: 1.8rem;
 $font-xl: 2rem;
@@ -23,12 +24,14 @@ $font-weight-600: 600;
 
 
 // Marging and padding
-
+$pm-5px: 0.5rem;
 $pm-10px: 1rem;
 $pm-15px: 1.5rem;
 $pm-20px: 2rem;
 $pm-25px: 2.5rem;
-$pm-30px: 3rem; 
+$pm-30px: 3rem;
+$pm-60px: 6rem;
+$square-cont: 5rem; 
 
 // Media breakpoints 
 $screen-xs: 480px;
